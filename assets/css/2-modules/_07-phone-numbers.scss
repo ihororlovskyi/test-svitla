@@ -1,0 +1,54 @@
+/*-------------------------------------------------------------------------*/
+/* # PHONE NUMBERS
+/*-------------------------------------------------------------------------*/
+.phone-numbers {
+	background: $bg-color4;
+	@include outer-container(1000px);
+
+	h3 {
+	}
+
+	.section-body {
+		padding: 42px 30px 38px;
+		@include clearfix;
+
+		article {
+			position: relative;
+			background: #fff;
+			border-radius: 5px;
+			margin-bottom: 18px;
+			border: 1px solid #e1e4e6;
+			box-shadow: 2px 2px 0px #ebebeb;
+			@include span-columns(6);
+
+			[class^="icon-phone"] {
+				position: absolute;
+				top: 50%;
+				left: 32px;
+				font-size: 44px;
+				margin-top: -22px;
+				color: #2b79ec;
+			}
+
+			.info {
+				overflow: hidden;
+				padding: 24px 75px 24px 105px;
+
+				p {
+					margin-bottom: 0.25em;
+					color: #969696;
+					font-size: 14px;
+					text-transform: uppercase;
+				}
+
+				h4 {
+					margin-bottom: 0;
+					font-family: "ProximaNovaRegular", Arial, sans-serif;
+					font-size: 25px;
+					color: #2b79ec;
+				}
+			}
+		}
+	}
+}
+

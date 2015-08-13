@@ -1,0 +1,63 @@
+/*-------------------------------------------------------------------------*/
+/* # BASE
+/*-------------------------------------------------------------------------*/
+body {
+	font-size: 15px;
+	color: #808080;
+	margin: 0;
+	background: #fbfbfb;
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
+}
+
+svg {
+}
+
+
+/**
+* typography
+* ----------------------------------------------------------------------------
+*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: "ProximaNovaBold", Arial, sans-serif;
+}
+h1 {
+	font-size: 35px;
+}
+h2 {
+	font-size: 31px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+
+
+/**
+* links
+* ----------------------------------------------------------------------------
+*/
+a {
+	&.disabled {
+		color: #d6d9db;
+	}
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* # INDEX PAGE
+/*-------------------------------------------------------------------------*/
+main {
+	background: #fff;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e1e4e6;
+
+	section>h3 {
+		background: #2b79ec;
+		padding: 0.565em 0.85em;
+		color: #fff;
+		margin-bottom: 0;
+	}
+}
+

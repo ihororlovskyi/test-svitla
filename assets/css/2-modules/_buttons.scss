@@ -1,0 +1,74 @@
+/*-------------------------------------------------------------------------*/
+/* # BUTTONTS
+/*-------------------------------------------------------------------------*/
+.btn {
+	display: inline-block;
+	padding: 0.8em 1.6em 0.6em;
+	border: 0;
+	border-radius: 4px;
+	background: #e9e9e9;
+	box-shadow: 1px 1px 0 #adb0b2, -1px -1px 0 #edeeef;
+	color: #646c6c;
+	text-align: center;
+	text-decoration: none;
+	font-family: "ProximaNovaRegular", Arial, sans-serif;
+	cursor: pointer;
+	font-size: 15px;
+	@include transition(all 0.2s $ease-out-quad);
+
+	&:hover {
+		color: #646c6c;
+		opacity: 0.9;
+	}
+
+	&.btn-block {
+		display: block;
+	}
+
+	&.btn-invert {
+		background: #fff;
+		color: #2b79ec;
+	}
+
+	&.btn-sm {
+		font-size: 15px;
+		padding: 0.44em 1.6em 0.44em;
+		font-family: "ProximaNovaRegular", Arial, sans-serif;;
+	}
+
+	&.btn-lg {
+		font-size: 19px;
+		padding: 0.8em 1.6em 0.6em;
+		font-family: "ProximaNovaBold", Arial, sans-serif;;
+	}
+
+	&.btn-green {
+		font-family: "ProximaNovaBold", Arial, sans-serif;;
+		background: #1ab86b;
+		color: #fff;
+		box-shadow: inset 1px 1px 0 rgba(#fff, 0.5), inset -1px -1px 0 rgba(#3a3d3d, 0.5);
+	}
+
+	&.btn-gray {
+		background: #f4f4f4;
+	}
+
+	&.btn-white {
+		background: #fff;
+	}
+}
+
+#tabs-nav {
+	.btn {
+		font-size: 18px;
+		color: #2b79ec;
+		background: #fff;
+		border: 1px solid #d6d9db;
+
+		&.active {
+			color: #fff;
+			background: #d6d9db;
+		}
+	}
+}
+

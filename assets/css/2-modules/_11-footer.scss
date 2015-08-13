@@ -1,0 +1,93 @@
+/*-------------------------------------------------------------------------*/
+/* # FOOTER
+/*-------------------------------------------------------------------------*/
+.footer {
+	background: #f7f7f7;
+	text-align: center;
+	padding: 65px 2% 70px;
+
+	footer {
+		@include outer-container(1100px);
+	}
+
+	nav.people-directory {
+		padding-bottom: 38px;
+		border-bottom: 1px solid #ebebeb;
+		margin-bottom: 38px;
+		@include span-columns(12);
+		@include omega();
+
+		h5 {
+			display: inline-block;
+			margin: 0;
+		}
+
+		a {
+			font-size: 17px;
+			margin: 0 6px;
+			text-transform: uppercase;
+		}
+	}
+
+	ul.menu {
+		padding-bottom: 38px;
+		border-bottom: 1px solid #ebebeb;
+		margin-bottom: 38px;
+		@include span-columns(12);
+		@include omega();
+
+		li {
+			display: inline-block;
+
+			&:after {
+				content: '•';
+				color: #a7a7a7;
+				display: inline-block;
+				margin: 0 3px 0 6px;
+
+			}
+
+			&:last-child:after {
+				content: '';
+			}
+
+			a {
+			}
+		}
+	}
+
+	p.slogan {
+		padding-bottom: 38px;
+		border-bottom: 1px solid #ebebeb;
+		margin-bottom: 30px;
+			@include span-columns(12);
+			@include shift(0);
+			@include omega();
+
+		@include media($desktop) {
+			@include span-columns(10);
+			@include shift(1);
+			@include omega();
+		}
+	}
+
+	nav.trust-logos {
+		margin-bottom: 15px;
+		@include span-columns(12);
+		@include omega();
+
+		a {
+			display: inline-block;
+			margin: 0 15px 15px;
+		}
+	}
+
+	p.copyright {
+		color: #a7a7a7;
+		font-weight: 700;
+		font-size: 13px;
+		@include span-columns(12);
+		@include omega();
+	}
+}
+

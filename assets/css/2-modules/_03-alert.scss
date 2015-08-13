@@ -1,0 +1,40 @@
+/*-------------------------------------------------------------------------*/
+/* # ALERT
+/*-------------------------------------------------------------------------*/
+.alert {
+	background: $bg-color4;
+	padding-bottom: 20px;
+	@include outer-container(1000px);
+
+	article {
+		background: #fff;
+		border: 1px solid #ee3234;
+		border-radius: 4px;
+		padding: 23px 140px 23px 90px;
+		position: relative;
+		color: #ee3234;
+
+		[class^="icon-"] {
+			font-size: 32px;
+			position: absolute;
+			top: 50%;
+			left: 25px;
+			margin-top: -16px;
+		}
+
+		p {
+			margin-bottom: 0;
+			font-size: 18px;
+		}
+
+		a {
+			font-size: 14px;
+			line-height: 1;
+			position: absolute;
+			top: 50%;
+			right: 25px;
+			margin-top: -7px;
+		}
+	}
+}
+

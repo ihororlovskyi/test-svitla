@@ -1,0 +1,44 @@
+
+<header class="header">
+
+	<a href="{{ site.baseurl }}/" class="logo">{% include svg/logo-peoplesmart.svg %}</a>
+
+	<section class="search-bar">
+		<form class="filter">
+
+			<div class="type">
+				<!-- <select name="type" required>
+					<option value="people" selected>People</option>
+					<option value="phone">Phone</option>
+					<option value="email">Email</option>
+					<option value="address">Address</option>
+					<option value="more">More</option>
+				</select> -->
+				<a href="#" class="btn btn-lg btn-block">People <span class="icon-caretdown"></span></a>
+			</div>
+
+			<div class="search">
+				<div class="inputs">
+					<div class="input">
+						<label for="person">Find:</label>
+						<input type="text" id="person" name="person" placeholder="Jack Keroac">
+					</div>
+					<div class="input">
+						<label for="place">Near:</label>
+						<input type="text" id="place" name="place" placeholder="Carmel, CA">
+					</div>
+				</div>
+				<button type="submit" class="btn btn-lg btn-block"><span class="icon-search"></span></button>
+			</div>
+
+		</form>
+	</section>
+
+	<nav class="account">
+		<a href="{{ site.baseurl }}/"><span class="icon-home"></span> Home</a> •
+		<a href="#">My Identity</a> •
+		<a href="#">Sarah Smith <span class="icon-caretdown"></span></a>
+	</nav>
+
+</header>
+

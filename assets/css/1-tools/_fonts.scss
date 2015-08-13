@@ -1,0 +1,90 @@
+/*-------------------------------------------------------------------------*/
+/* # PROXIMA NOVA REGULAR
+/*-------------------------------------------------------------------------*/
+@font-face {
+	font-family: "ProximaNovaRegular";
+	src: url("../fonts/ProximaNovaRegular.eot");
+	src: url("../fonts/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaRegular.woff") format("woff"),
+	url("../fonts/ProximaNovaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* # PROXIMA NOVA BOLD
+/*-------------------------------------------------------------------------*/
+@font-face {
+	font-family: "ProximaNovaBold";
+	src: url("../fonts/ProximaNovaBold.eot");
+	src: url("../fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ProximaNovaBold.woff") format("woff"),
+	url("../fonts/ProximaNovaBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+
+/*-------------------------------------------------------------------------*/
+/* # ICOMOON
+/*-------------------------------------------------------------------------*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?2upcve');
+	src:url('../fonts/icomoon.eot?#iefix2upcve') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?2upcve') format('truetype'),
+		url('../fonts/icomoon.woff?2upcve') format('woff'),
+		url('../fonts/icomoon.svg?2upcve#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowright:before {
+	content: "\e600";
+}
+.icon-attention:before {
+	content: "\e601";
+}
+.icon-caretdown:before {
+	content: "\e602";
+}
+.icon-home:before {
+	content: "\e603";
+}
+.icon-letter:before {
+	content: "\e604";
+}
+.icon-person:before {
+	content: "\e605";
+}
+.icon-phone:before {
+	content: "\e606";
+}
+.icon-pin:before {
+	content: "\e607";
+}
+.icon-question:before {
+	content: "\e608";
+}
+.icon-search:before {
+	content: "\e609";
+}
+.icon-ways:before {
+	content: "\e60a";
+}
+

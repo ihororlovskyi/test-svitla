@@ -1,0 +1,91 @@
+/*-------------------------------------------------------------------------*/
+/* # RELATIVES
+/*-------------------------------------------------------------------------*/
+.relatives {
+	background: $bg-color4;
+	@include outer-container(1000px);
+
+	h3 {
+	}
+
+	.section-body {
+		padding: 42px 30px 38px;
+
+		article {
+			@include clearfix;
+
+			.icon-person {
+				@include span-columns(1);
+			}
+
+			.name {
+				@include span-columns(4);
+			}
+
+			.age {
+				@include span-columns(1);
+			}
+
+			.address {
+				@include span-columns(4);
+			}
+
+			.link {
+				@include span-columns(2);
+				@include omega();
+			}
+
+			&.head {
+				padding: 0 30px;
+				font-size: 14px;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				color: #969696;
+
+				.name {
+					@include shift(1);
+				}
+			}
+
+			&.person {
+				padding: 26px 30px;
+				position: relative;
+				background: #fff;
+				border-radius: 5px;
+				margin-bottom: 18px;
+				border: 1px solid #e1e4e6;
+				box-shadow: 2px 2px 0px #ebebeb;
+				color: #646c6c;
+
+				.icon-person {
+					font-size: 44px;
+					line-height: 36px;
+					color: $primary-color;
+				}
+
+				.name {
+					font-size: 25px;
+					line-height: 36px;
+					color: $primary-color;
+				}
+
+				.age {
+					font-size: 20px;
+					line-height: 36px;
+					font-family: "ProximaNovaBold", Arial, sans-serif;
+				}
+
+				.address {
+					font-size: 16px;
+					line-height: 18px;
+				}
+
+				.link {
+					font-size: 16px;
+					line-height: 36px;
+				}
+			}
+		}
+	}
+}
+

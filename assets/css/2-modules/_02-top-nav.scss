@@ -1,0 +1,42 @@
+/*-------------------------------------------------------------------------*/
+/* # TOP NAV
+/*-------------------------------------------------------------------------*/
+.top-nav {
+	background: $bg-color4;
+	padding: 25px 0;
+	@include outer-container(1000px);
+
+	nav.grid-left {
+		float: left;
+
+		a.btn {
+		}
+
+		a.help {
+			color: #cecece;
+			margin-left: 12px;
+			font-size: 20px;
+			top: 4px;
+			position: relative;
+
+			&:hover {
+				color: 0.9;
+			}
+		}
+
+	}
+
+	nav.grid-right {
+		float: right;
+
+		.btn {
+			float: left;
+			margin-left: 10px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+}
+

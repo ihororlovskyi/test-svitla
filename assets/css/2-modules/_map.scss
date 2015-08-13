@@ -1,0 +1,35 @@
+/*-------------------------------------------------------------------------*/
+/* # MAP
+/*-------------------------------------------------------------------------*/
+.map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #e1e4e6;
+	box-shadow: 2px 2px 0px #ebebeb;
+	overflow: hidden;
+
+	img {
+		max-width: none;
+	}
+
+	.content {
+		padding: 0 0.5em 1em 0.5em;
+	}
+
+	.firstHeading {
+		font-size: 1em;
+		line-height: 1em;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	#bodyContent p {
+		font-size: 1em;
+		margin: 0;
+	}
+}
+

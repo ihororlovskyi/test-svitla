@@ -1,0 +1,114 @@
+/*-------------------------------------------------------------------------*/
+/* # MAST HEAD
+/*-------------------------------------------------------------------------*/
+header.header {
+	background: $bg-color4;
+	min-height: 96px;
+	border-bottom: 1px solid #e1e4e6;
+	@include clearfix;
+
+	a.logo {
+		margin: 26px 30px;
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		svg {
+		}
+	}
+
+	section.search-bar {
+		position: relative;
+		z-index: 1;
+		top: 20px;
+		@include outer-container(1000px);
+
+		form.filter {
+			@include span-columns(12);
+
+			.type {
+				@include span-columns(3 of 12);
+
+				a.btn {
+					padding-top: 0;
+					padding-bottom: 0;
+					text-align: left;
+					position: relative;
+					line-height: 55px;
+
+					[class^="icon-"] {
+						position: absolute;
+						right: 10px;
+						top: 50%;
+						line-height: 20px;
+						margin-top: -10px;
+					}
+				}
+			}
+
+			.search {
+				@include span-columns(9 of 12);
+
+				.inputs {
+					background: #fff;
+					border-radius: 4px;
+					border: 1px solid $divider;
+					@include span-columns(8 of 9);
+
+					.input {
+						position: relative;
+						@include span-columns(4 of 9);
+
+						label {
+							cursor: pointer;
+							position: absolute;
+							left: 20px;
+							top: 50%;
+							margin-bottom: 0;
+							font-family: "ProximaNovaBold", Arial, sans-serif;
+							font-size: 19px;
+							line-height: 20px;
+							margin-top: -10px;
+							margin-bottom: 0;
+						}
+
+						input[type="text"] {
+							margin-bottom: 0;
+							box-shadow: none;
+							border: 0;
+							font-size: 19px;
+							line-height: 55px;
+							padding: 0 0 0 75px;
+
+							@include placeholder {
+								color: #b3b3b3;
+								font-size: 19px;
+							}
+						}
+					}
+				}
+
+				button.btn {
+					font-size: 28px;
+					padding: 0;
+					line-height: 55px;
+					padding-left: 0;
+					padding-right: 0;
+					@include span-columns(1 of 9);
+
+					[class^="icon-"] {
+						position: relative;
+						top: 4px;
+					}
+				}
+			}
+		}
+	}
+
+	nav.account {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+
