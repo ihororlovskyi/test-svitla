@@ -1,7 +1,15 @@
 
-<header class="header">
+<section class="header">
 
-	<a href="{{ site.baseurl }}/" class="logo">{% include svg/logo-peoplesmart.svg %}</a>
+	<header>
+		<a href="{{ site.baseurl }}/" class="logo">{% include svg/logo-peoplesmart.svg %}</a>
+
+		<ul class="account">
+			<li><a href="{{ site.baseurl }}/"><span class="icon-home"></span> Home</a></li>
+			<li><a href="#">My Identity</a></li>
+			<li><a href="#">Sarah Smith <span class="icon-caretdown"></span></a></li>
+		</ul>
+	</header>
 
 	<section class="search-bar">
 		<form class="filter">
@@ -34,11 +42,5 @@
 		</form>
 	</section>
 
-	<nav class="account">
-		<a href="{{ site.baseurl }}/"><span class="icon-home"></span> Home</a> •
-		<a href="#">My Identity</a> •
-		<a href="#">Sarah Smith <span class="icon-caretdown"></span></a>
-	</nav>
-
-</header>
+</section>
 

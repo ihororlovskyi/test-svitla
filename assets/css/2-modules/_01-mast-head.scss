@@ -1,27 +1,71 @@
 /*-------------------------------------------------------------------------*/
 /* # MAST HEAD
 /*-------------------------------------------------------------------------*/
-header.header {
+.header {
 	background: $bg-color4;
-	min-height: 96px;
+	// min-height: 96px;
 	border-bottom: 1px solid #e1e4e6;
 	@include clearfix;
 
-	a.logo {
-		margin: 26px 30px;
-		position: absolute;
-		left: 0;
-		top: 0;
+	header {
+		@include outer-container(1000px);
+		@include clearfix;
 
-		svg {
+		a.logo {
+			// position: absolute;
+			// left: 0;
+			// top: 0;
+			padding: 26px 0;
+			@include span-columns(6);
+
+			svg {
+			}
+		}
+
+		ul.account {
+			// position: absolute;
+			// right: 0;
+			// top: 0;
+			text-align: right;
+			padding: 35px 0;
+			@include span-columns(6);
+
+			li {
+				display: inline-block;
+
+				&:after {
+					content: '•';
+					color: #d6d9db;
+					display: inline-block;
+					margin: 0 3px 0 6px;
+				}
+
+				&:last-child:after {
+					content: '';
+				}
+
+				a {
+					font-size: 16px;
+					line-height: 25px;
+
+					[class^="icon-home"] {
+						margin-right: 4px;
+					}
+
+					[class^="icon-caretdown"] {
+						color: #d6d9db;
+					}
+				}
+			}
 		}
 	}
 
 	section.search-bar {
 		position: relative;
 		z-index: 1;
-		top: 20px;
 		@include outer-container(1000px);
+		margin-top: 20px;
+		margin-bottom: 20px;
 
 		form.filter {
 			@include span-columns(12);
@@ -103,12 +147,6 @@ header.header {
 				}
 			}
 		}
-	}
-
-	nav.account {
-		position: absolute;
-		right: 0;
-		top: 0;
 	}
 }
 
